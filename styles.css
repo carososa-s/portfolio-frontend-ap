@@ -1,18 +1,167 @@
-.banner {
+@import url("https://use.typekit.net/tog1idc.css");
+
+body {
+    background: rgb(44,17,76);
+    background: linear-gradient(0deg, rgba(44,17,76,1) 0%, rgba(33,10,47,1) 130%);
+    font-family: Poppins, sans-serif;
+    background-attachment: fixed;
+}
+
+/* .banner {
+   
+} */
+
+
+
+.navbar {
+    height: 10vh;
+    background: rgb(29, 29, 29);
+    background: linear-gradient(0deg, rgba(29, 29, 29, 1) 0%, rgba(23, 22, 22, 1) 62%, rgba(14, 14, 14, 1) 100%);
+}
+
+.mi-foto {
+    z-index: 1;
+   
+}
+
+main {
     background: url("https://w.wallhaven.cc/full/6q/wallhaven-6qoyox.png");
-    height: 45vh;
     background-size: cover;
 }
-body {
-    background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-}    
-
-.mi-foto{
-z-index: 1;
-position: relative;
-top: 75px;
-margin-left: 30px;
+.title-proyects {
+    text-align: center;
 }
+
+
+
+
+.yo-programo {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.my-data {
+display: flex;
+flex-direction: column;
+width: 46vw;
+margin: auto;
+}
+
+.my-name {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.presentation-title {
+    font-size: 1.5rem;
+}
+.rol {
+    font-size: 2rem;
+    align-self: end;
+}
+.titles {
+    font-size: 20px;
+}
+
+@keyframes escribir {
+    from {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
+}
+
+.proyects {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+.box-proyect {
+    width: 90%;
+    height: 14rem;
+    background: url(./assets/img/page.png);
+    background-size: cover;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow:  0px 1px 20px -10px  rgb(88, 54, 130);
+    --color-descripcion: rgba(0, 0, 0, 0);
+}
+
+.box-proyect:hover {
+    --color-descripcion: white;
+}
+
+.enlace-proyecto {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    position:relative;
+    color: white;
+}
+
+.enlace-proyecto:hover {
+    color:white;
+    
+}
+
+.description-proyect {
+    color: var(--color-descripcion);
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0 0 1rem;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+
+@media (min-width: 768px) {
+    .box-proyect {
+        width: 45%;
+    }
+    
+
+}
+
+@media (min-width: 992px) {
+    main {
+        max-height: 90vh;
+        height: 90vh;
+    }
+    .page-two,
+    .page-three,
+    .page-four {
+        max-height: 90vh;
+        height: 90vh;
+        /* background: rgb(44,17,76);
+    background: linear-gradient(0deg, rgba(44,17,76,1) 0%, rgba(33,10,47,1) 130%); */
+    }
+
+    .box-proyect {
+        width:  30%;
+        height: 45%;
+      
+    }
+
+    .title-proyects {
+        letter-spacing: -5px;
+        width: 3%;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 60git add .px;
+    }
+    .proyects {
+        width: 90%;
+    }
+}
+
+
